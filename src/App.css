@@ -1,38 +1,183 @@
+
+body {
+  font-size: 15px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.box {
+  display: flex;
+  flex-flow: column;
+  padding:0px;
+  border-radius: 7px;
+  background: linear-gradient(to bottom, hsl(31, 77%, 52%), hsl(184, 100%, 22%), hsl(179, 100%, 13%));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.div-pad {
+  padding: 30px;
+  width: 12.5rem;
+  border-radius: 7px;  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul li {
+  padding: 10px;
+}
+
+.Sedan {
+  background-color: hsl(31, 77%, 52%); 
+}
+
+.Suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.but-Sedan {
+  color: hsl(31, 77%, 52%); 
+  font-weight: bold;
+}
+
+.but-Suvs {
+  color: hsl(184, 100%, 22%);
+  font-weight: bold;
+}
+
+.but-Luxury {
+  color: hsl(179, 100%, 13%);
+  font-weight: bold;
+}
+
+
+.img-div {
+  width: 2rem !important;
+  border-radius: 50%;
+  background-color:unset;
+}
+
+h3 {
+  color: hsl(0, 0%, 95%);
+  margin: 0px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0px;
+  line-height: 1.7;
+  font-size: 0.8rem;
+}
+
+img {
+  width: 30%;
+  height: 25px;
+}
+
+button {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  border: transparent;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 375px) { 
+  .App {
+    display: flex;
+    flex-flow: column;
   }
-  to {
-    transform: rotate(360deg);
+  .box {
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(to bottom, hsl(31, 77%, 52%), hsl(184, 100%, 22%), hsl(179, 100%, 13%));
   }
 }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  .App {
+    display: flex;
+    flex-flow: row;
+    padding: 5rem;
+  }
+  .box {
+    display: flex;
+    flex-flow: row;
+    background: linear-gradient(to right, hsl(31, 77%, 52%), hsl(184, 100%, 22%), hsl(179, 100%, 13%));
+  }
+  button {
+    margin-top: 15px;
+
+  }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  .App {
+    display: flex;
+    flex-flow: row;
+    padding: 10rem;
+  }
+  .box {
+    display: flex;
+    flex-flow: row;
+    background: linear-gradient(to right, hsl(31, 77%, 52%), hsl(184, 100%, 22%), hsl(179, 100%, 13%));
+  }
+  button {
+    margin-top: 15px;
+
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+  .App {
+    display: flex;
+    flex-flow: row;
+    padding: 10rem;
+  }
+  .box {
+    display: flex;
+    flex-flow: row;
+    background: linear-gradient(to right, hsl(31, 77%, 52%), hsl(184, 100%, 22%), hsl(179, 100%, 13%));
+  }
+  button {
+    margin-top: 15px;
+
+  }
+ }
+
+ /* Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: 1440px) { 
+  .App {
+    display: flex;
+    flex-flow: row;
+    padding: 10rem;
+
+  }
+  .box {
+    display: flex;
+    flex-flow: row;
+    background: linear-gradient(to right, hsl(31, 77%, 52%), hsl(184, 100%, 22%), hsl(179, 100%, 13%));
+  }
+  button {
+    margin-top: 15px;
+
+  }
+ }
